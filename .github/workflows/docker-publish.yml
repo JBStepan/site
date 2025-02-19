@@ -2,7 +2,11 @@ name: Build and push
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
+    
+permissions:
+  packages: write
+
 jobs:
   commit-hash:
     runs-on: ubuntu-latest
@@ -12,15 +16,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Get commit hash
         id: get_commit
-        run: echo "::set-output name=commit_hash::$(git rev-parse HEAD)"
-
+        run: |
+          calculatedSha=$(git rev-parse --short ${{ github.sha }})
+          echo "COMMIT_SHORT_SHA=$calculatedSha" >> $GITHUB_ENV
   build:
     needs:
       - commit-hash
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
     
       - name: Checkout repository
@@ -47,6 +49,6 @@ jobs:
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
         with:
           context: .
-          tags: ghcr.io/jbstepan/site:${{ needs.commit-hash.outputs.commit_hash }}
+          tags: ghcr.io/jbstepan/site:${{ $COMMIT_SHORT_SHA }}
           labels: ${{ steps.meta.outputs.labels }}
           push: true
