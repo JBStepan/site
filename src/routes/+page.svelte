@@ -29,9 +29,6 @@
 </main>
 
 <style>
-  .contact-link {
-    color: black;
-  }
   p {
     font-size: large;
   }
