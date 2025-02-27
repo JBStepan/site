@@ -9,9 +9,8 @@
   import Footer from "../components/Footer.svelte";
 </script>
 
-<main class="text-center mt-[6.5rem]">
-
-  <NavBar />
+<NavBar />
+<main class="text-center mt-20">
 
   <div class="flex justify-center items-center"><img class="" src={logo} width="512" alt=""></div>
   
