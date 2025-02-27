@@ -3,7 +3,7 @@ import type { Actions } from './$types';
 
 async function handleTurnstile(ip: string, token: string, platform: Readonly<App.Platform>) {
     const turnstileURL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
-
+    console.log(platform.env.TURNSTILEKEY)
     const result = await fetch(turnstileURL, {
         body: JSON.stringify({
           secret: platform.env.TURNSTILEKEY,
@@ -17,6 +17,8 @@ async function handleTurnstile(ip: string, token: string, platform: Readonly<App
     });
 
     const outcome = await result.json()
+
+    console.log(outcome)
         
     if(outcome.success == false) {
         return false
@@ -81,6 +83,10 @@ export const actions = {
         const ip = request.headers.get('CF-Connecting-IP') as string;
 
         const turnstile = await handleTurnstile(ip, token, platform as Readonly<App.Platform>)
+
+        if (turnstile == false) {
+            return { success: false, turnstilefail: true }
+        }
 
         /// Handle submitting
         const email = formData.get("email") as string
