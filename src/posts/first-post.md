@@ -3,7 +3,7 @@ title: First Post
 description: First post.
 date: '2-28-2025'
 categories:
-    - general
+  - general
 published: true
 ---
 
@@ -14,4 +14,3 @@ A little bit about myself (also sorta doxing myself), I live in Iowa and will be
 Now what to expect on this ‘blog’, primarily posts about things I’m working on, small life updates and maybe a political post or two idk, we’ll see where this goes. And if I go awhile without posting it’s either life is busy or my really bad ADHD has taken control and I have forgotten this thing exists.
 
 If you'd like to see the source code for this blog and the entire site you can [here](https://github.com/jbstepan/site)
-
