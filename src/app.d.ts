@@ -4,7 +4,8 @@ declare global {
 	namespace App {
         interface Platform {
             env: {
-                TURNSTILEKEY: String;
+                TURNSTILEKEY: string;
+                DISCORD_WEBHOOK: string;
             };
         }
     }
