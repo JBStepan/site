@@ -6,11 +6,6 @@
   import Footer from "../../components/Footer.svelte";
 
   let { form }: { form: ActionData } = $props()
-
-  // let body: string | undefined = $state(form?.body?.toString() ?? "")
-  // let email: string | undefined = $state(form?.email?.toString() ?? "")
-  // let subject: string | undefined = $state(form?.subject?.toString() ?? "")
-  // let name: string | undefined = $state(form?.name?.toString() ?? "")
 </script>
 
 <svelte:head>

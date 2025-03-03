@@ -19,3 +19,10 @@ export type Post = {
     categories: Categories[],
     published: boolean
 }
+
+export type Webhook = {
+    email: string;
+    name: string;
+    subject: string;
+    body: string;
+}

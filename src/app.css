@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
+@config "../tailwind.config.ts";
 
 :root {
   font-family: "Nunito Sans", serif;
