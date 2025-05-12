@@ -3,7 +3,7 @@
 @config "../tailwind.config.ts";
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", serif;
 
   font-weight: 400;
   line-height: 1.5;
