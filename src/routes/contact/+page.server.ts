@@ -17,8 +17,6 @@ async function handleTurnstile(ip: string, token: string, platform: Readonly<App
     });
 
     const outcome = await result.json()
-
-    console.log(outcome)
         
     if(outcome.success == false) {
         return false
@@ -69,7 +67,7 @@ async function generateWebhook(data: Webhook, platform: Readonly<App.Platform>) 
         body: JSON.stringify(content)
     })
 
-    if (f.status != 200) {
+    if (f.status != 204) {
         console.error("[Webhook] Webhook did not work")
     }
 }
