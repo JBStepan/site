@@ -10,9 +10,9 @@
 </script>
 
 <NavBar />
-<main class="text-center mt-20">
+<main class="text-center mt-20 sm:m-2">
 
-  <div class="flex justify-center items-center"><img class="" src={logo} width="512" alt=""></div>
+  <div class="flex justify-center items-center"><img class="" src={logo} width="375" alt=""></div>
   
   <div class="m-0 p-[15px] block">
     <h1 class="text-3xl font-bold p-4">Hi, I'm Jakob or JB</h1>

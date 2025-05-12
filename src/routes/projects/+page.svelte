@@ -20,7 +20,7 @@
 
 <main class="mt-[6rem]">
     
-    <div class="flex justify-center flex-row flex-wrap gap-6 mt-4">
+    <div class="grid gap-10 m-0 box-border grid-cols-1 lg:grid-cols-3 lg:mx-100 mx-auto">
         {#each projects as pro }
             <ProjectCard name={pro.name} desc={pro.desc} links={pro.links} />
         {/each}

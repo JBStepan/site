@@ -2,6 +2,6 @@
     let { tag }: { tag: string } = $props() 
 </script>
 
-<span class=" bg-gray-500 text-white rounded-full mx-1 px-1 text-center items-center">
+<span class=" bg-gray-500 text-white rounded-full mx-1 px-2 py-1 text-center items-center">
     #{tag}
 </span>
