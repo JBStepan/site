@@ -15,7 +15,7 @@
   <div class="flex justify-center items-center"><img class="" src={logo} width="375" alt=""></div>
   
   <div class="m-0 p-[15px] block">
-    <h1 class="text-3xl font-bold p-4">Hi, I'm Jakob or JB</h1>
+    <h1 class="text-3xl font-bold p-4">Hi, I'm Jakob or JB Stepan</h1>
     <p class="text-lg p-4">A student and hobbiest programmer</p>
   </div>
 
