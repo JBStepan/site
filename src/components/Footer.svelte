@@ -5,7 +5,7 @@
   import Bluesky from "../images/bluesky.svg"
 </script>
 
-<div class="flex flex-col justify-center items-center mt-8 left-0 right-0 w-[100%] text-[#808080]">
+<div class="flex flex-col pt-4 justify-center items-center fixed bottom-0  left-0 right-0 w-[100%] m-0 text-[#808080]">
   <div>
     <a href="https://www.x.com/jbstepan">
       <img class="inline-block w-7 m-1" src={X} alt="">
