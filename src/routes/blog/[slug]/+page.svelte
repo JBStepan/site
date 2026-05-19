@@ -8,7 +8,7 @@
 </script>
 
 <NavBar />
-<article class="flex flex-col items-center text-center max-w-[35rem] mx-auto px-1 mt-10 mb-10">
+<article class="flex flex-col items-center text-center max-w-[44rem] mx-auto px-1 mt-10 mb-10">
     <div class="self-start text-left mb-5 space-y-3">
         <h1 class=" font-bold text-4xl underline">{data.meta.title}</h1>
         <p>Published on {formatDate(data.meta.date)}</p>
@@ -17,7 +17,7 @@
         {/each}
     </div>
     <span class="border-b-gray-500 border-b-2 w-full rounded-2xl"> </span>
-    <div class="prose prose-invert prose-a:text-blue-500 mx-auto w-full text-left mt-5 ">
+    <div class="prose prose-invert prose-a:text-blue-500 prose-p:text-lg mx-auto w-full text-left mt-5 ">
         <data.content></data.content>
     </div>
 </article>
